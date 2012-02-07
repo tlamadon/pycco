@@ -270,6 +270,8 @@ languages = {
 
     ".pl":  { "name": "perl", "symbol": "#" },
 
+    ".r":  { "name": "r", "symbol": "#" },
+
     ".sql": { "name": "sql", "symbol": "--" },
 
     ".c":   { "name": "c", "symbol": "//"},
