@@ -218,7 +218,7 @@ def highlight(source, sections, preserve_paths=True, outdir=None):
         section["docs_html"] = markdown(preprocess(docs_text,
                                                    i,
                                                    preserve_paths=preserve_paths,
-                                                   outdir=outdir))
+                                                   outdir=outdir),extensions=['mathjax'])
         section["num"] = i
 
 # === HTML Code generation ===
