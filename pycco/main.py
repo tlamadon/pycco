@@ -218,7 +218,7 @@ def highlight(source, sections, preserve_paths=True, outdir=None):
         section["docs_html"] = markdown(preprocess(docs_text,
                                                    i,
                                                    preserve_paths=preserve_paths,
-                                                   outdir=outdir),extensions=['mathjax'])
+                                                   outdir=outdir),extensions=['mdx_math'])
         section["num"] = i
 
 # === HTML Code generation ===
@@ -259,6 +259,9 @@ def generate_html(source, sections, preserve_paths=True, outdir=None):
 
 # This module contains all of our static resources.
 import pycco_resources
+
+# import local mathjax 
+import mdx_math
 
 # Import our external dependencies.
 import optparse
